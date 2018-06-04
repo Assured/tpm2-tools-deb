@@ -1,0 +1,5 @@
+tpm2-tools (3.0.4-1) unstable; urgency=low
+
+  * tpm2-tools 3.0.4 package
+
+ -- blaufish <blaufish@users.noreply.github.com>  Mon, 04 Jun 2018 13:04:32 +0200

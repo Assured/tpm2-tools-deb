@@ -1,0 +1,27 @@
+Source: tpm2-tools
+Section: utils
+Priority: optional
+Maintainer: blaufish <blaufish@users.noreply.github.com>
+Build-Depends:
+ autoconf,
+ autoconf-archive,
+ debhelper (>= 10~),
+ libcurl4-gnutls-dev | libcurl-ssl-dev,
+ libssl-dev,
+ libtool,
+ libsapi-dev,
+ pkg-config,
+ xsltproc,
+ docbook-xsl
+Homepage: https://github.com/01org/tpm2.0-tools
+Standards-Version: 4.0.1
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/tpm2-tools.git
+Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/tpm2-tools.git
+
+Package: tpm2-tools
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}, libsapi-utils
+Description: TPM 2.0 utilities
+ This package contains a set of tools to use with TPM 2.0 chips,
+ for common tasks and features provided by the hardware; such as
+ for doing basic key management, attestation, encryption and signing.
