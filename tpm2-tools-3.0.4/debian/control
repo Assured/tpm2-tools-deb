@@ -9,7 +9,7 @@ Build-Depends:
  libcurl4-gnutls-dev | libcurl-ssl-dev,
  libssl-dev,
  libtool,
- libsapi-dev (= 1.4.0),
+ libsapi-dev (= 1.4.0-1),
  pkg-config,
  xsltproc,
  docbook-xsl
@@ -18,7 +18,7 @@ Standards-Version: 4.0.1
 
 Package: tpm2-tools
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, libsapi-utils
+Depends: ${misc:Depends}, ${shlibs:Depends}, libsapi0 (= 1.4.0-1)
 Description: TPM 2.0 utilities
  This package contains a set of tools to use with TPM 2.0 chips,
  for common tasks and features provided by the hardware; such as
